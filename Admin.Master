@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Galaxy.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="admin.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+            <div class="container">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="dashboard.aspx">
+                        <span class="icon"><i class="fa fa-superpowers" aria-hidden="true"></i></span>
+                        <img src="images/GL%20Logo.png" class="logo" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="users.aspx">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="title">Users </span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="moviesdb.aspx">
+                        <span class="icon"><i class="fa fa-list-ol" aria-hidden="true"></i></span>
+                        <span class="title">Movies</span>
+
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="bookingdb.aspx">
+                        <span class="icon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                        <span class="title">Booking</span>
+
+                        </a>
+                    </li>
+
+                     <li>
+                        <a href="home.aspx">
+                        <span class="icon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                        <span class="title">Logout</span>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+</html>
